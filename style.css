@@ -1,0 +1,150 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    background: #92A29C; /* Зелёный фон */
+    color: #fff;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    background: #92A29C; /* Цвет фона */
+    padding: 15px 0;
+    position: fixed;
+    width: 500px; /* Фиксированная ширина */
+    top: 20px; /* Отступ сверху */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Центрируем элементы внутри */
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Стилизация списка */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* Главный экран */
+.hero {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+/* Блок с изображением */
+.image-block {
+    background: #5B8499;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-block img {
+    width: 300px;
+    border-radius: 20px;
+
+}
+.hero-text {
+    background: #5B8499; /* Голубой блок */
+    padding: 50px;
+    border-radius: 30px;
+}
+.hero-text h1 {
+    font-size: 96px;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 32px;
+}
+
+/* Общие стили для блоков */
+section {
+    padding: 80px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    background: #5B8499; /* Голубой блок */
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* "Обо мне" */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.about-content img {
+    width: 400px;
+    border-radius: 30px;
+}
+.about-content div {
+    max-width: 500px;
+}
+.about-content h2 {
+    font-size: 64px;
+}
+
+/* Галерея */
+#gallery {
+    padding: 80px 20px;
+}
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.gallery-grid img {
+    width: 300px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Контакты */
+#contacts {
+    padding: 60px 20px;
+}
+#contacts a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Доп. информация */
+#info {
+    padding: 60px 20px;
+}
+
+/* Подвал */
+footer {
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+}
