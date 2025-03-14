@@ -53,6 +53,7 @@ nav ul li a {
 
 /* Блок с изображением */
 .image-block {
+    position: relative;  /* Добавлено позиционирование для дочерних элементов */
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -69,15 +70,41 @@ nav ul li a {
     padding: 200px;
     border-radius: 30px;
     height: 290.76px;
+    width: 440px;
 }
 .hero-text h1 {
-    font-size: 96px;
+    font-size: 150px;
     margin: 0;
 }
 .hero-text p {
-    font-size: 32px;
+    font-size: 150px;
+    margin: auto;
 }
 
+/* Карточка с цитатой */
+.quote-box {
+    position: absolute;
+    bottom: 70px; /* Смещаем цитату чуть выше */
+    right: 50px; /* Смещаем цитату немного вправо */
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive;
+    transform: rotate(-20deg);
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 150px;
+}
+.quote-box p {
+    max-width: 150px;
+    font-size: 30px;
+    text-align: left;
+    transform: rotate(20deg);  
+    margin-top: 17px;
+}
 /* Общие стили для блоков */
 section {
     padding: 80px 20px;
