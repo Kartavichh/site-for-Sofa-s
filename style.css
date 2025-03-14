@@ -53,24 +53,22 @@ nav ul li a {
 
 /* Блок с изображением */
 .image-block {
-    background: #5B8499;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: fit-content;
 }
 
 .image-block img {
-    width: 300px;
+    width: 534px;
     border-radius: 20px;
 }
 .hero-text {
     background: #5B8499; /* Голубой блок */
-    padding: 50px;
+    padding: 200px;
     border-radius: 30px;
-    height: 288.08px;
+    height: 290.76px;
 }
 .hero-text h1 {
     font-size: 96px;
@@ -84,7 +82,7 @@ nav ul li a {
 section {
     padding: 80px 20px;
     margin: 40px auto;
-    max-width: 900px;
+    width: 1360px;
     background: #5B8499; /* Голубой блок */
     border-radius: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +96,6 @@ section {
     gap: 50px;
 }
 .about-content img {
-    width: 400px;
     border-radius: 30px;
 }
 .about-content div {
@@ -106,16 +103,19 @@ section {
 }
 .about-title {
     position: absolute;
-    top: 1px;
-    left: 50px;
-    font-size: 35px;
+    top: -30px;
+    left: 400px;
+    font-size: 45px;
     font-family: 'Great Vibes', cursive;
+    font-weight: normal;
     color: #fff;
+    background: transparent;
+    padding: 10px 20px;
 }
 .divCont{
     position: relative;
     margin: 40px auto;
-    max-width: 900px;
+
 
 }
 .text{
