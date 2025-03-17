@@ -131,7 +131,6 @@ section {
 .about-title {
     position: absolute;
     top: -4vh;
-
     font-size: 45px;
     font-family: 'Great Vibes', cursive;
     font-weight: normal;
@@ -148,40 +147,98 @@ section {
 .text{
     font-size: 32px;
 }
+/* Секция перед галереей */
+.preGallery-grid {
+    position: relative;  /* Добавлено позиционирование для дочерних элементов */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.preGallery-grid img{
+    width: 1400.48px;
+}
+#preGallery{
+    background: transparent;
+    max-height: fit-content;
+    padding: 0 0;
+}
+.firP{
+    position: absolute;
+    font-size: 9vh;
+    top:0%;
+    left: 5%;
+    text-align: left;
+}
+.secP{
+    bottom: 0;
+    position: absolute;
+    font-size: 9vh;
+    left: 5%;
+    text-align: left;
+}
 /* Галерея */
 #gallery {
-    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Гибкие колонки */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
 }
+
 .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
     gap: 20px;
     justify-content: center;
 }
+
 .gallery-grid img {
-    width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
 }
+
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
 
 /* Контакты */
 #contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Центрируем содержимое */
+    align-items: center;
     padding: 60px 20px;
+    text-align: center;
+    font-size: 24px;
 }
+
 #contacts a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 /* Доп. информация */
 #info {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Центрируем текст */
+    align-items: center;
     padding: 60px 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
 
+#info p {
+    max-width: 800px; /* Ограничиваем ширину текста */
+}
 /* Подвал */
 footer {
     padding: 20px;
