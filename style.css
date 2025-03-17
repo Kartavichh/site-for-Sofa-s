@@ -130,8 +130,8 @@ section {
 }
 .about-title {
     position: absolute;
-    top: -30px;
-    left: 400px;
+    top: -4vh;
+
     font-size: 45px;
     font-family: 'Great Vibes', cursive;
     font-weight: normal;
