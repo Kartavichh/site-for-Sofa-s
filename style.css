@@ -141,8 +141,6 @@ section {
 .divCont{
     position: relative;
     margin: 40px auto;
-
-
 }
 .text{
     font-size: 32px;
@@ -181,11 +179,19 @@ section {
 #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Гибкие колонки */
-    gap: 20px;
+    position: relative;  /* Добавлено позиционирование для дочерних элементов */
+    display: grid;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
-    text-align: center;
+    max-height: fit-content;
+    padding: 0 0;
+}
+#backPhGal{
+    
+}
+#gallery h2{
+    position: absolute;
+    top: 0;
 }
 
 .gallery-grid {
@@ -193,6 +199,7 @@ section {
     grid-template-columns: repeat(3, 1fr); /* Три колонки */
     gap: 20px;
     justify-content: center;
+    
 }
 
 .gallery-grid img {
