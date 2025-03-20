@@ -163,7 +163,7 @@ section {
 }
 .firP{
     position: absolute;
-    font-size: 9vh;
+    font-size: 68px;
     top:0%;
     left: 5%;
     text-align: left;
@@ -171,7 +171,7 @@ section {
 .secP{
     bottom: 0;
     position: absolute;
-    font-size: 9vh;
+    font-size: 68px;
     left: 5%;
     text-align: left;
 }
