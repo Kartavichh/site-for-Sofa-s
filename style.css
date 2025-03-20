@@ -228,42 +228,147 @@ section {
     right: 7vh;
 }
 
-/* Контакты */
-#contacts {
+/* Основной контейнер */
+#combined-section {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; /* Центрируем содержимое */
-    align-items: center;
-    padding: 60px 20px;
-    text-align: center;
-    font-size: 24px;
+    grid-template-columns: 1fr 1fr;
+    width: 1400px;
+    height: fit-content;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: none;
+    padding: 0px;
+    gap: 20px;
 }
 
-#contacts a {
-    color: #fff;
-    text-decoration: none;
+/* ---- Левая часть (Mail) ---- */
+.mail-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.mail-text {
+    position: absolute;
+    top: -4%;
+    left: 15px;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+.floating-image {
+    position: absolute;
+    width: 314px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    border-radius: 41px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.email {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 39px;
+    font-family: 'Great Vibes', cursive;
+    color: #333;
+}
+
+.privacy-policy {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    font-size: 16px;
+    color: white;
+}
+
+/* ---- Правая часть (My Travels) ---- */
+.travel-container {
+    position: relative;
+    background: #5B8499;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    align-items: center;
+}
+
+.travel-container {
+    display: grid;
+    grid-template-columns: 2px 117px 71px 92px;
+    grid-template-rows: auto 1fr;
+    grid-template-rows: 57px 228px 208px;
+    gap: 20px;
+}
+
+.travel-container h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: white;
+    grid-column: 1 / 4;
+}
+
+.travel-image {
+    width: 260px;
+    justify-self: center;
+    grid-column: 5;
+    grid-row: 2 / 3;
+}
+
+.travel-list {
+    list-style: none;
+    padding: 0;
     font-size: 28px;
-    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    justify-self: center;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    text-align: left;
 }
 
-/* Доп. информация */
-#info {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; /* Центрируем текст */
-    align-items: center;
-    padding: 60px 20px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
+.travel-list li {
+    margin-bottom: 5px;
+    font-size: 42px;
 }
 
-#info p {
-    max-width: 800px; /* Ограничиваем ширину текста */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1 / 6;
+    grid-row: 7;
 }
+
+.social-icons img {
+    width: 139px;
+}
+
+.address {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    grid-column: 1 / -1; /* Адрес на всю последнюю строку */
+}
+
 /* Подвал */
 footer {
-    padding: 20px;
+    padding: 20px 0px 0px;
     background: transparent;
     color: #fff;
+    font-size: 30px;
 }
